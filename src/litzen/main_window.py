@@ -9,8 +9,10 @@ class MainWindow(QWidget):
   def __init__(self) -> None:
     """."""
     super().__init__()
+    width: int = 800
+    height: int = 600
     self.setWindowTitle("Logiciel modulaire")
-    self.resize(400, 300)
+    self.resize(width, height)
 
     self.label = QLabel("Bienvenue !")
     self.button = QPushButton("Action")
